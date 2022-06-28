@@ -36,13 +36,15 @@ const Card = ({ ...props }) => {
   };
 
   return (
-    <div className="w-280 h-full shadow-md rounded-md">
-      <img
-        className="rounded-t-md w-full h-180 cursor-pointer"
-        onClick={toDescription}
-        src={flag}
-        alt=""
-      />
+    <div className="lf:w-280 le:w-[350px] lg:w-[300px] sm:w-[390px] h-full shadow-md rounded-md">
+      <div className="rounded-t-md lf:h-180 lg:h-[200px] h-[230px]">
+        <img
+          className="w-full h-full cursor-pointer"
+          onClick={toDescription}
+          src={flag}
+          alt=""
+        />
+      </div>
       <div className="p-2 mt-4 mb-10 mx-3">
         <h1 className="font-bold text-xl mb-3">{name}</h1>
         <h2 className="font-bold my-1">
